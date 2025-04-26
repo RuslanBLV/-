@@ -9,7 +9,10 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "requests (>=2.32.3,<3.0.0)",
-    "python-dotenv (>=1.1.0,<2.0.0)"
+    "python-dotenv (>=1.1.0,<2.0.0)",
+    "pandas (>=2.2.3,<3.0.0)",
+    "openpyxl (>=3.1.5,<4.0.0)",
+    "pytest (>=8.3.5,<9.0.0)"
 ]
 
 
@@ -22,6 +25,11 @@ flake8 = "^7.2.0"
 mypy = "^1.15.0"
 black = "^25.1.0"
 isort = "^6.0.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+pytest-cov = "^6.1.1"
 
 [tool.isort]
 line-length = 119
